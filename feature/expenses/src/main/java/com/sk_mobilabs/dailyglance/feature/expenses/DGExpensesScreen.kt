@@ -1,0 +1,25 @@
+package com.sk_mobilabs.dailyglance.feature.expenses
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import com.sk_mobilabs.dailyglance.core.designsystem.component.DGScaffold
+import com.sk_mobilabs.dailyglance.core.designsystem.component.DGText
+import com.sk_mobilabs.dailyglance.core.designsystem.component.DGTopBar
+
+@Composable
+fun DGExpensesScreen() {
+    DGScaffold(topBar = { DGTopBar("Expenses") }) { padding ->
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding),
+            contentAlignment = Alignment.Center,
+        ) {
+            DGText("Expenses — coming soon")
+        }
+    }
+}
